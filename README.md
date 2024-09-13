@@ -45,7 +45,7 @@ Run the project:
 ```
 PYTHONPATH=. python app/main.py
 ```
-Once the project is running, the documentation will be available at: http://127.0.0.1:8080/
+Once the project is running, the documentation will be available at: http://127.0.0.1:8080/docs
 
 ## The documentation page will feature 2 endpoints:
 
@@ -103,16 +103,18 @@ pip install -r requirements.txt
 ```
 PYTHONPATH=. python app/main.py
 ```
-После запуска документация проекта будет доступна по адресу: http://127.0.0.1:8080/
+После запуска документация проекта будет доступна по адресу: http://127.0.0.1:8080/docs
 
 ## На странице с документацией будет доступно 2 эндпоинта:
 
 - POST /
+
 Форма для ввода URL.
 Будет создан короткий URL с помощью random choices.
 После записи в базу данных вернет HTTPStatus 201 и оригинальный и короткий URLs.
 
 - GET /{short_url_id}
+
 По short_url_id будет извлечен из базы данных короткий URL (app_host/app_port/short_url).
 Выполнится редирект на страницу c полученным URL.
 
