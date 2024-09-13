@@ -49,9 +49,13 @@ Once the project is running, the documentation will be available at: http://127.
 
 ## The documentation page will feature 2 endpoints:
 
-- POST / Form to input a URL. A shortened URL will be created using random choices. After being saved to the database, it returns HTTPStatus 201 and both the original and shortened URLs.
+- POST /
 
-- GET /{short_url_id} The short URL (app_host/app_port/short_url) is retrieved from the database by its short_url_id. It performs a redirect to the page with the original URL.
+Form to input a URL. A shortened URL will be created using random choices. After being saved to the database, it returns HTTPStatus 201 and both the original and shortened URLs.
+
+- GET /{short_url_id}
+
+The short URL (app_host/app_port/short_url) is retrieved from the database by its short_url_id. It performs a redirect to the page with the original URL.
 
 # Author:
 Konstantin Steblev
